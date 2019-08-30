@@ -9,7 +9,7 @@ https://github.com/braintree/runbook
 
 Install Runbook:
 
-Install Gem, Ruby, and tmux.
+Install Ruby 2.3, Gem, and tmux.
 Install Runbook DSL:
 
 ```

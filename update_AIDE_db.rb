@@ -22,8 +22,7 @@ database and filesystem"}
        command "mv -f /var/lib/aide/aide.db.new /var/lib/aide.db"
      end
      step "Check if the new database matches filesystem" do
-       assert %q{aide --check | grep "All files match AIDE 
-database"}
+       assert %q{aide --check | grep "All files match AIDE database"}
      end
    end
 end
