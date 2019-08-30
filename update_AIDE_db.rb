@@ -10,10 +10,8 @@ database if there are changes.
    section "Update AIDE database" do
      step "Check if AIDE needs to be updated" do
        note "Running AIDE check on filesystem..."
-       assert %q{aide --check | grep "found differences between 
-database and filesystem"}
-       confirm "Have you checked to see if changes logged in 
-/var/log/aide/aide.log are expected?"
+       assert %q{aide --check | grep "found differences between database and filesystem"}
+       confirm "Have you checked to see if changes logged in /var/log/aide/aide.log are expected?"
      end
      step "Build new AIDE database" do
        command "aide --update"
